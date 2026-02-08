@@ -178,3 +178,87 @@ footer {
   font-size: 14px;
   color: #caffd6;
 }
+
+.stickers-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.section {
+  padding: 20px;
+}
+
+.section h1 {
+  font-size: 24px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* style.css */
+
+/* Basic navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #006a4e;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger menu hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide menu initially */
+    flex-direction: column;
+    background-color: #006a4e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
